@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+.filters {
+  flex-basis: 12%;
+  padding-right: 40px;
+  position: relative; /* Adaugă poziționare relativă aici */
+}
+
+.filters:after {
+  content: '';
+  position: absolute;
+  right: 0px; /* Distanța de la text la linie */
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Lățimea liniei */
+  background-color: #c0c0c0; /* Culoarea liniei */
+}
+
+.filters h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.filters ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.filters li {
+  margin-bottom: 5px;
+}
+
+.filters label {
+  margin-left: 8px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap; /* Permite elementelor să treacă pe un nou rând când nu mai este loc */
+  justify-content: flex-start; /* Aliniază produsele la începutul containerului */
+  gap: 20px;  /* Adăugați un padding pentru spațiu între linie și produse */
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column; /* Aranjează conținutul cardului în coloană */
+  align-items: center; /* Centrează elementele pe axa transversală */
+  justify-content: space-between; /* Distribuie spațiul în mod egal între elemente */
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px; /* Lățimea fiecărui card de produs */
+  box-sizing: border-box;
+}
+
+.product-card img {
+  width: 100%; /* Ajustează lățimea imaginii la 100% din containerul său */
+  height: 300px; /* Setează o înălțime fixă pentru a avea toate imaginile de aceeași dimensiune */
+  object-fit: cover;
+}
+
+.product-info {
+  margin-top: 10px;
+  text-align: center;
+}
+.product-link {
+  text-decoration: none; /* Elimină sublinierea */
+  color: black; /* Schimbă culoarea textului în negru */
+}
+
+
+.price {
+  color: #555;
+  font-size: 18px;
+}
+
+.reviews {
+  color: #777;
+  font-size: 14px;
+}
+
+.clear-filters {
+  display: inline-block; /* Sau "block", în funcție de cum dorești să fie poziționat */
+  padding: 9px 31px; /* Ajustează padding-ul după preferințe */
+  margin-top: 20px; /* Spațiu deasupra butonului */
+  border: 2px solid #898888; /* Chenarul negru specificat */
+  background-color: white; /* Fundalul alb */
+  color: rgb(50, 48, 48); /* Textul negru */
+  cursor: pointer; /* Schimbă cursorul în pointer pentru a indica că este clicabil */
+  text-decoration: none; /* Elimină orice subliniere */
+  font-size: 16px; /* Ajustează dimensiunea textului după preferințe */
+  /* border-radius: 0px; */ /* Scoate această linie pentru a avea chenarul dreptunghiular */
+}

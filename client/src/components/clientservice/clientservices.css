@@ -1,0 +1,117 @@
+/* ClientServices.css */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 50vh; */ /* Comentăm sau eliminăm această linie */
+  margin-top: -150px; /* Adu mai aproape de secțiunea de introducere */
+}
+.form {
+  width: 100%;
+  max-width: 500px; /* Sau orice altă lățime preferi */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.form-field {
+  margin-bottom: 30px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-title {
+  text-align: center;
+}
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea {
+  width: 100%;
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Asigură-te că padding-ul nu afectează lățimea */
+}
+
+.form-field textarea {
+  height: 150px; /* Ajustează înălțimea conform preferințelor */
+}
+
+.form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 10px; /* Reducem spațiul între elementele copil dacă este necesar */
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto; /* Ajustăm marginile pentru a aduce conținutul mai aproape */
+}
+
+.form-container {
+  width: 100%; /* Se asigură că formularul ocupă lățimea disponibilă în container */
+}
+
+.helpful-info {
+  width: 100%; /* Se asigură că secțiunea informativă ocupă lățimea disponibilă în container */
+  text-align: center; /* Centrează textul secțiunii informative */
+}
+
+.helpful-info h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.helpful-info p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.email-link {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.story-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajustăm umbra pentru a fi mai proeminentă */
+  text-align: center;
+}
+
+.story-section h2,
+.story-section p {
+  margin: 0 auto; /* Asigură că textul este centrat pe orizontală */
+  max-width: 80%; /* Opțional: Limitează lățimea maximă a textului pentru o mai bună lizibilitate */
+}

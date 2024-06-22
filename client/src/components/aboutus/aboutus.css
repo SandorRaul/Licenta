@@ -1,0 +1,31 @@
+.aboutUsContainer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(
+    to bottom,
+    #f2e6d9 0%,
+    #ffffff 100%
+  ); /* Fundal crem accentuat spre alb */
+}
+
+.aboutUsTitle {
+  margin-bottom: 20px;
+}
+
+.aboutUsParagraph {
+  margin-bottom: 20px;
+}
+
+.aboutUsImage {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  margin-right: 10px; /* Adaugă spațiu la dreapta fiecărei imagini */
+  border-radius: 10px; /* Rotunjește colțurile imaginilor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adaugă o umbră subtilă pentru a scoate în evidență imaginile */
+}
+
+/* Asigură-te că ultima imagine din orice rând nu are margin-right */
+.aboutUsImage:last-child {
+  margin-right: 0;
+}
